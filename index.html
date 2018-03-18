@@ -3,7 +3,7 @@
   <head>
     <title>Pravat Bhusal</title>
     <!--style sheets-->
-		<link href="styles/indexstyles.css" type="text/css" rel="stylesheet">
+	<link href="styles/indexstyles.css" type="text/css" rel="stylesheet">
     <link href="styles/animate.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
@@ -13,8 +13,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfH8pwR3Y1QeRzgPixttvfSHRrA2Y3tC8&callback=myMap"></script>
-  </head>
-  <main>
     <!--navbar-->
     <nav id="navbar">
       <div id="navbar-title"><a href="#">Pravat Bhusal</a></div>
@@ -25,8 +23,10 @@
       <div id="navbar-tab"><a href="#projects">Projects</a></div>
       <div id="navbar-tab"><a href="#contact">Contact</a></div>
     </nav>
-    <div id="navbar-background"></div>
+  </head>
+  <main>
     <!--front page canvas-->
+    <div id="navbar-background"></div>
     <div id="front-page-canvas">
       <h1 id="front-page-canvas-text">Professional software development, a click away.</h1>
     </div>
@@ -35,12 +35,12 @@
       <div id="about-me-welcome" class="wow fadeInUp"><u>W</u>elcome</div>
       <div id="about-me-content" class="wow fadeInUp">
         <div id="about-me-content-text">
-        Hi, I'm Pravat, a Software Engineer...<br><br>
+        Yo, I'm Pravat, a Software Engineer!<br><br>
 
         With several years of experience in the industry, I provide a comprehensive set of solutions to software problems.
         In fact, I've developed many projects for small businesses, start-ups and larger industries.<br><br>
 
-        My objectives are to develop bold and outstanding projects to fit your exact requirements.
+        My objectives are to develop bold and outstanding projects to fit a client's exact requirements.
         I'm highly professional and communicative, always delivering software solutions to a range of consumers.<br><br>
 
         I am dedicated to my profession, bringing intricate concepts through the medium of code.<br><br>
@@ -101,7 +101,7 @@
     <div id="skills">
       <div></div><div id="skills-title">Skills</div><div></div>
       <div class="wow fadeIn">
-        <p id="skills-skill-text">HTML5/CSS3</p>
+        <p id="skills-skill-text">HTML5 / CSS3</p>
         <div id="skills-skill-html5css3"></div>
       </div>
       <div class="wow fadeIn">
@@ -151,6 +151,8 @@
         </div>
       </a>
     </div>
+  </main>
+  <footer>
     <!--google maps-->
     <div id="google-maps"></div>
     <!--contact-->
@@ -162,66 +164,7 @@
       <a href="https://devpost.com/Shadowsych" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/devpost.png"></a>
       <a href="https://twitter.com/Shadowsych" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/twitter.png"></a>
     </div>
-  </main>
-  <footer>
   </footer>
-  <script>
-    //canvas text carousel
-    var canvasText = document.getElementById("front-page-canvas-text");
-    var i = 0;
-    function updateCanvasText() {
-      if(i == 0) {
-        canvasText.innerHTML = "Providing a variety of skill-sets.";
-        i++;
-      } else if(i == 1) {
-        canvasText.innerHTML = "Here to make your business ventures easier.";
-        i++;
-      } else if(i == 2) {
-        canvasText.innerHTML = "Secure a well-established developer, today!";
-        i++;
-      } else if(i == 3) {
-        canvasText.innerHTML = "Professional software development, a click away.";
-        i = 0;
-      }
-      setTimeout(updateCanvasText, 3000);
-    }
-    updateCanvasText();
-
-    //progress bars
-    var html5css3Bar = new RadialProgress(document.getElementById("skills-skill-html5css3"),
-    {progress:0.90, colorFg:"#E4512A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-    var javascriptBar = new RadialProgress(document.getElementById("skills-skill-javascript"),
-    {progress:0.50, colorFg:"#F0DB4F", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-    var mysqlBar = new RadialProgress(document.getElementById("skills-skill-mysql"),
-    {progress:0.80, colorFg:"#00618A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-    var javaBar = new RadialProgress(document.getElementById("skills-skill-java"),
-    {progress:0.65, colorFg:"#F69314", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-    var phpBAR = new RadialProgress(document.getElementById("skills-skill-php"),
-    {progress:0.60, colorFg:"#777BB3", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-    var pythonBar = new RadialProgress(document.getElementById("skills-skill-python"),
-    {progress:0.10, colorFg:"#F8B721", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
-
-    //google maps
-    var myLatLng = {lat: 32.926077, lng: -96.9487462};
-    var map = new google.maps.Map(document.getElementById('google-maps'), {
-      zoom: 10,
-      center: myLatLng
-    });
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: "Residence"
-    });
-
-    //scroll reveal
-    new WOW().init();
-
-    //smooth scroll on anchor links
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      easing: "easeInOutCubic",
-      offset: 75,
-      speed: 500
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
