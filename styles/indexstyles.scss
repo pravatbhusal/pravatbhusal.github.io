@@ -58,9 +58,9 @@ a {
 }
 #about-me {
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   width: auto;
-  height: 650px;
+  height: 600px;
   background: #3F3640;
   padding-left: 15%;
   padding-right: 15%;
@@ -75,7 +75,7 @@ a {
   #about-me-content {
     #about-me-content-text {
       float: left;
-      color: white;
+      color: #EDEDED;
       width: 500px;
       font-size: 17px;
       font-family: "Lemon Sans";
@@ -85,7 +85,7 @@ a {
       margin-left: 50px;
       border-radius: 50%;
       border-style: ridge;
-      border-color: white;
+      border-color: #EDEDED;
       width: 250px;
       height: 250px;
     }
@@ -94,14 +94,14 @@ a {
     align-self: center;
     #about-me-footer-download-resume {
       float: left;
-      background-color: white;
+      background-color: #EDEDED;
       border-radius: 5px;
       font-family: "Lemon Sans";
       border: none;
       height: 35px;
       cursor: pointer;
       &:hover {
-        background-color: #EAE3E3;
+        background-color: #ddd7d7;
       }
     }
   }
@@ -132,6 +132,7 @@ a {
     #services-service-type-text {
       color: #818181;
       width: 300px;
+      font-family: "Times";
     }
   }
 }
@@ -186,6 +187,7 @@ a {
     #projects-project-text {
       color: #EDEDED;
       width: 300px;
+      font-family: "Times";
     }
   }
 }

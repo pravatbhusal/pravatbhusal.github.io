@@ -4,10 +4,12 @@
     <title>Pravat Bhusal</title>
     <!--style sheets-->
 		<link href="styles/indexstyles.css" type="text/css" rel="stylesheet">
+    <link href="styles/animate.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <!--javascript files-->
     <script src="js/progressbar.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfH8pwR3Y1QeRzgPixttvfSHRrA2Y3tC8&callback=myMap"></script>
   </head>
   <main>
@@ -27,8 +29,8 @@
     </div>
     <!--about me section-->
     <div id="about-me">
-      <div id="about-me-welcome"><u>W</u>elcome</div>
-      <div id="about-me-content">
+      <div id="about-me-welcome" class="wow fadeInUp"><u>W</u>elcome</div>
+      <div id="about-me-content" class="wow fadeInUp">
         <div id="about-me-content-text">
         Hi, I'm Pravat, a Software Engineer...<br><br>
 
@@ -36,88 +38,86 @@
         In fact, I've developed many projects for small businesses, start-ups and larger industries.<br><br>
 
         My objectives are to develop bold and outstanding projects to fit your exact requirements.
-        I'm highly professional and communicative, always delivering on time with a guarantee of 100% client satisfaction and project quality.<br><br>
+        I'm highly professional and communicative, always delivering software solutions to a range of consumers.<br><br>
 
-        What do I do? I have been working as a software engineer for several years, I am dedicated to my profession, bringing intricate concepts through the medium of code.<br><br>
+        I am dedicated to my profession, bringing intricate concepts through the medium of code.<br><br>
 
-        I excel at learning new technologies, and better approaches to projects, to deliver a project to a client, exceeding their expectations.
+        I excel at learning new technologies, and better approaches to projects, to deliver a project to a client exceeding his or her expectations.
         I'm honest, responsible and always ready to take on a new challenge.
       </div>
       <img id="about-me-content-image" src="rsrc/irl_me.jpg">
       </div>
-      <div id="about-me-footer">
-        <button type="button" id="about-me-footer-download-resume">Download Resume</button>
+      <div id="about-me-footer" class="wow fadeInUp">
+        <a href="resume.pdf" target="_blank"><button type="button" id="about-me-footer-download-resume">Download Resume</button></a>
       </div>
     </div>
     <!--services section-->
     <div id="services">
-      <div></div><div id="services-title">Services</div><div></div>
-      <div id="services-service-type">
+      <div></div><div id="services-title" class="wow slideInLeft">Services</div><div></div>
+      <div id="services-service-type" class="wow slideInLeft">
         <img src="rsrc/coding.png">
         <p id="services-service-type-title">Web Design & Build</p>
         <p id="services-service-type-text">With several years of experience in the industry I can bring your thoughts to life.
            I am dedicated and passionate about your designs. Using the latest technology and hardware,
-          I can provide an affordable service, with stunning results.</p>
+           I can provide an affordable service, with stunning results.</p>
       </div>
-      <div id="services-service-type">
+      <div id="services-service-type" class="wow slideInLeft">
         <img src="rsrc/smartphone.png">
         <p id="services-service-type-title">Mobile Development</p>
-        <p id="services-service-type-text">Over 70% of all websites are visited from a mobile device as of 2018.
-           I am able to bring your website into the future with a mobile optimisation package,
-           maintaning your design whilst making it accessable for devices.</p>
+        <p id="services-service-type-text">Over 77% of Americans own a smartphone of some kind.
+          Therefore, I am able to program an entire enterprise to small start-up application,
+          whilst making it accessable for both IOS and Android devices.</p>
       </div>
-      <div id="services-service-type">
+      <div id="services-service-type" class="wow slideInLeft">
         <img src="rsrc/blog.png">
         <p id="services-service-type-title">Database Management</p>
-        <p id="services-service-type-text">When information is needed, the first place that is visited is the internet.
-           I can create a blog with a custom web portal so you can keep your clients up
-           to date on your latest ventures.</p>
+        <p id="services-service-type-text">Billions of people store data throughout the internet.
+           I can create a database with an organized and secure structure so you can keep your data in-tact.</p>
       </div>
-      <div id="services-service-type">
+      <div id="services-service-type" class="wow slideInRight">
         <img src="rsrc/new.png">
         <p id="services-service-type-title">Partial Re-Design</p>
-        <p id="services-service-type-text">Happy with your website? only want to change some fonts or colours? I can make those changes for you.
-           Maintaining your websites build, style and functionality. Making requested adjustments for cost effective pricing.</p>
+        <p id="services-service-type-text">Happy with your website? Only want to change some fonts or colours? I can make those changes for you.
+           Maintaining your websites build, style and functionality. Making requested adjustments for cost-effective pricing.</p>
       </div>
-      <div id="services-service-type">
+      <div id="services-service-type" class="wow slideInRight">
         <img src="rsrc/analytics.png">
         <p id="services-service-type-title">SEO Optimisation</p>
         <p id="services-service-type-text">We are in a digital age. When you want a service, the first thing done is to search the internet.
-           I can provide marketing techniques to your existing website, to make you more findable in a search.
-           Making sure you get the business you deserve.</p>
+           I can program marketing APIs to your existing website, to make you more findable in a search.</p>
       </div>
-      <div id="services-service-type">
+      <div id="services-service-type" class="wow slideInRight">
         <img src="rsrc/geometry.png">
         <p id="services-service-type-title">Software Engineering</p>
         <p id="services-service-type-text">With several years in the industry,
-           I have an extensive contact list of graphic designers and artists.
-           Put a request in and we can provide you the artistic designs you need for competative pricing.</p>
+           I can program a desktop or complex software application that meets your needs. Whether it's a web-server,
+           game, or plugin, I can deliver.</p>
       </div>
     </div>
     <!--skills section-->
     <div id="skills">
       <div></div><div id="skills-title">Skills</div><div></div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">HTML5/CSS3</p>
         <div id="skills-skill-html5css3"></div>
       </div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">Javascript</p>
         <div id="skills-skill-javascript"></div>
       </div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">MySQL</p>
         <div id="skills-skill-mysql"></div>
       </div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">Java</p>
         <div id="skills-skill-java"></div>
       </div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">PHP</p>
         <div id="skills-skill-php"></div>
       </div>
-      <div>
+      <div class="wow fadeIn">
         <p id="skills-skill-text">Python</p>
         <div id="skills-skill-python"></div>
       </div>
@@ -125,14 +125,14 @@
     <!--projects-->
     <div id="projects">
       <div></div><div id="projects-title">Recent Projects</div><div></div>
-      <a href="https://github.com/Shadowsych/greenview" target="_blank">
+      <a href="https://github.com/Shadowsych/greenview" target="_blank" class="wow zoomIn">
         <div id="projects-project">
           <img width="150px" height="150px" src="rsrc/project1.png">
           <p id="projects-project-title">GreenView</p>
           <p id="projects-project-text">An Android mobile application that determines whether an item is recyclable through a vision API.</p>
         </div>
       </a>
-      <a href="https://github.com/Shadowsych/steamhackathon.org" target="_blank">
+      <a href="https://github.com/Shadowsych/steamhackathon.org" target="_blank" class="wow zoomIn">
         <div id="projects-project">
           <img width="150px" height="150px" src="rsrc/project2.jpg">
           <p id="projects-project-title">STEAM Hackathon</p>
@@ -140,7 +140,7 @@
           The website allows for users to host their flash or scratch games via the server.</p>
         </div>
       </a>
-      <a href="https://github.com/Shadowsych/sarassafashion.com" target="_blank">
+      <a href="https://github.com/Shadowsych/sarassafashion.com" target="_blank" class="wow zoomIn">
         <div id="projects-project">
           <img width="250px" height="150px" src="rsrc/project3.png">
           <p id="projects-project-title">SarassA Fashion</p>
@@ -152,12 +152,12 @@
     <div id="google-maps"></div>
     <!--contact-->
     <div id="contact">
-      <a href="mailto:pravat.bhusal@gmail.com" target="_top"><img width="50px" height="50px" src="rsrc/email.png"></a>
-      <a href="https://www.linkedin.com/in/pravat-bhusal/" target="_blank"><img width="50px" height="50px" src="rsrc/linkedin.png"></a>
-      <a href="https://github.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/github.png"></a>
-      <a href="https://angel.co/pravat-bhusal" target="_blank"><img width="50px" height="50px" src="rsrc/angelist.png"></a>
-      <a href="https://devpost.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/devpost.png"></a>
-      <a href="https://twitter.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/twitter.png"></a>
+      <a href="mailto:pravat.bhusal@gmail.com" target="_top" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/email.png"></a>
+      <a href="https://www.linkedin.com/in/pravat-bhusal/" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/linkedin.png"></a>
+      <a href="https://github.com/Shadowsych" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/github.png"></a>
+      <a href="https://angel.co/pravat-bhusal" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/angelist.png"></a>
+      <a href="https://devpost.com/Shadowsych" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/devpost.png"></a>
+      <a href="https://twitter.com/Shadowsych" target="_blank" class="wow rubberBand"><img width="50px" height="50px" src="rsrc/twitter.png"></a>
     </div>
   </main>
   <footer>
@@ -188,6 +188,9 @@
       map: map,
       title: "Residence"
     });
+
+    //scroll reveal
+    new WOW().init();
   </script>
 </body>
 </html>

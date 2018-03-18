@@ -50,9 +50,9 @@ a {
 
 #about-me {
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   width: auto;
-  height: 650px;
+  height: 600px;
   background: #3F3640;
   padding-left: 15%;
   padding-right: 15%; }
@@ -65,7 +65,7 @@ a {
     margin-top: 50px; }
   #about-me #about-me-content #about-me-content-text {
     float: left;
-    color: white;
+    color: #EDEDED;
     width: 500px;
     font-size: 17px;
     font-family: "Lemon Sans"; }
@@ -74,21 +74,21 @@ a {
     margin-left: 50px;
     border-radius: 50%;
     border-style: ridge;
-    border-color: white;
+    border-color: #EDEDED;
     width: 250px;
     height: 250px; }
   #about-me #about-me-footer {
     align-self: center; }
     #about-me #about-me-footer #about-me-footer-download-resume {
       float: left;
-      background-color: white;
+      background-color: #EDEDED;
       border-radius: 5px;
       font-family: "Lemon Sans";
       border: none;
       height: 35px;
       cursor: pointer; }
       #about-me #about-me-footer #about-me-footer-download-resume:hover {
-        background-color: #EAE3E3; }
+        background-color: #ddd7d7; }
 
 #services {
   display: grid;
@@ -113,7 +113,8 @@ a {
       font-family: "Lemon Sans"; }
     #services #services-service-type #services-service-type-text {
       color: #818181;
-      width: 300px; }
+      width: 300px;
+      font-family: "Times"; }
 
 #skills {
   display: grid;
@@ -161,7 +162,8 @@ a {
       font-family: "Lemon Sans"; }
     #projects #projects-project #projects-project-text {
       color: #EDEDED;
-      width: 300px; }
+      width: 300px;
+      font-family: "Times"; }
 
 #google-maps {
   width: auto;
