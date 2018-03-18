@@ -15,7 +15,7 @@ function updateCanvasText() {
     canvasText.innerHTML = "Professional software development, a click away.";
     i = 0;
   }
-  setTimeout(updateCanvasText, 3000);
+  setTimeout(updateCanvasText, 2500);
 }
 updateCanvasText();
 

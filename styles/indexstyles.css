@@ -1,3 +1,4 @@
+/*media queries*/
 /*navbar*/
 #navbar {
   display: grid;
@@ -11,6 +12,10 @@
   align-items: center;
   padding-left: 7.5%;
   padding-right: 7.5%; }
+  @media (max-width: 767px) {
+    #navbar {
+      position: relative;
+      grid-template-columns: 1fr; } }
   #navbar #navbar-title {
     font-family: "Lobster", serif;
     font-size: 30px;
@@ -42,27 +47,49 @@ a {
 
 #front-page-canvas {
   background-image: url("../rsrc/canvas_background.jpg");
-  background-size: 100% 90%;
+  background-size: 100% 100%;
   width: auto;
   height: 90%; }
+  @media (max-width: 767px) {
+    #front-page-canvas {
+      height: 60%; } }
   #front-page-canvas #front-page-canvas-text {
     position: relative;
     float: left;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 32px;
     font-family: Verdana; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #front-page-canvas #front-page-canvas-text {
+        font-size: 28px;
+        left: 55%;
+        width: 500px; } }
+    @media (max-width: 767px) {
+      #front-page-canvas #front-page-canvas-text {
+        font-size: 24px;
+        left: 55%;
+        width: 200px; } }
 
 #about-me {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   width: auto;
-  height: 600px;
+  height: auto;
   background: #3F3640;
   padding-left: 15%;
   padding-right: 15%; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    #about-me {
+      grid-template-rows: 0.5fr 2fr 0.5fr; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #about-me {
+      grid-template-rows: 0.5fr 2fr 0.25fr; } }
+  @media (max-width: 767px) {
+    #about-me {
+      grid-template-rows: 0.5fr 2fr 0.25fr; } }
   #about-me #about-me-welcome {
     color: white;
     font-size: 48px;
@@ -76,6 +103,14 @@ a {
     width: 500px;
     font-size: 17px;
     font-family: "Lemon Sans"; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #about-me #about-me-content #about-me-content-text {
+        float: none;
+        width: auto; } }
+    @media (max-width: 767px) {
+      #about-me #about-me-content #about-me-content-text {
+        float: none;
+        width: auto; } }
   #about-me #about-me-content #about-me-content-image {
     float: left;
     margin-left: 50px;
@@ -84,10 +119,26 @@ a {
     border-color: #EDEDED;
     width: 250px;
     height: 250px; }
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      #about-me #about-me-content #about-me-content-image {
+        margin-left: 0px;
+        width: 200px;
+        height: 200px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #about-me #about-me-content #about-me-content-image {
+        float: none;
+        margin-left: 0px;
+        width: 200px;
+        height: 200px; } }
+    @media (max-width: 767px) {
+      #about-me #about-me-content #about-me-content-image {
+        float: none;
+        margin-left: 0px;
+        width: 150px;
+        height: 150px; } }
   #about-me #about-me-footer {
     align-self: center; }
     #about-me #about-me-footer #about-me-footer-download-resume {
-      float: left;
       background-color: #EDEDED;
       border-radius: 5px;
       font-family: "Lemon Sans";
@@ -105,6 +156,16 @@ a {
   width: auto;
   height: 900px;
   background-color: #EDEDED; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #services {
+      height: 2250px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
+  @media (max-width: 767px) {
+    #services {
+      height: 2250px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
   #services #services-title {
     text-align: center;
     align-self: center;
@@ -113,6 +174,14 @@ a {
     margin-bottom: 50px;
     margin-top: 50px;
     color: #3F3640; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #services #services-title {
+        margin-bottom: 0px;
+        margin-top: 0px; } }
+    @media (max-width: 767px) {
+      #services #services-title {
+        margin-bottom: 0px;
+        margin-top: 0px; } }
   #services #services-service-type {
     text-align: center; }
     #services #services-service-type #services-service-type-title {
@@ -131,6 +200,11 @@ a {
   height: 650px;
   background-color: #3F3640;
   justify-items: center; }
+  @media (max-width: 767px) {
+    #skills {
+      height: 1750px;
+      grid-template-rows: 0.05fr 0.05fr 0.05fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr;
+      grid-template-columns: 1fr; } }
   #skills #skills-title {
     text-align: center;
     align-self: center;
@@ -150,10 +224,18 @@ a {
   grid-template-rows: 0.1fr 0.35fr;
   grid-template-columns: repeat(3, 1fr);
   width: auto;
-  height: 500px;
+  height: auto;
   background-color: #723F3C;
   align-items: center;
   justify-items: center; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #projects {
+      grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
+      grid-template-columns: 1fr; } }
+  @media (max-width: 767px) {
+    #projects {
+      grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
+      grid-template-columns: 1fr; } }
   #projects #projects-title {
     text-align: center;
     font-family: "Lemon Sans";
@@ -172,6 +254,7 @@ a {
       width: 300px;
       font-family: "Times"; }
 
+/*footer*/
 #google-maps {
   width: auto;
   height: 500px; }
@@ -186,7 +269,16 @@ a {
   justify-items: center;
   padding-right: 20%;
   padding-left: 20%; }
-
-/*footer*/
+  @media (max-width: 767px) {
+    #contact {
+      padding-right: 0%;
+      padding-left: 0%; } }
+  #contact #contact-icon {
+    width: 50px;
+    height: 50px; }
+    @media (max-width: 767px) {
+      #contact #contact-icon {
+        width: 45px;
+        height: 45px; } }
 
 /*# sourceMappingURL=indexstyles.css.map */
