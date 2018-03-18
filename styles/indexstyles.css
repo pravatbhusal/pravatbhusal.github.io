@@ -15,7 +15,8 @@
   @media (max-width: 767px) {
     #navbar {
       position: relative;
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      height: 150px; } }
   #navbar #navbar-title {
     font-family: "Lobster", serif;
     font-size: 30px;
@@ -33,6 +34,9 @@
   width: auto;
   height: 100px;
   background-color: #252523; }
+  @media (max-width: 767px) {
+    #navbar-background {
+      height: 0px; } }
 
 /*main body*/
 html, body {

@@ -33,6 +33,7 @@ $desktop-width: 1200px;
   @include mobile {
     position: relative;
     grid-template-columns: 1fr;
+    height: 150px;
   }
   #navbar-title {
     font-family: "Lobster", serif;
@@ -54,6 +55,9 @@ $desktop-width: 1200px;
   width: auto;
   height: 100px;
   background-color: #252523;
+  @include mobile {
+    height: 0px;
+  }
 }
 /*main body*/
 %reset-style {
