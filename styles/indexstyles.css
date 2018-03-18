@@ -1,9 +1,11 @@
 /*navbar*/
 #navbar {
   display: grid;
+  position: fixed;
+  z-index: 9999;
   grid-template-columns: 1.5fr repeat(6, 1fr);
-  width: auto;
-  height: 100px;
+  width: 85%;
+  height: 75px;
   background-color: #252523;
   justify-items: center;
   align-items: center;
@@ -21,6 +23,11 @@
     cursor: pointer; }
     #navbar #navbar-tab:hover {
       color: #eae3e3; }
+
+#navbar-background {
+  width: auto;
+  height: 100px;
+  background-color: #252523; }
 
 /*main body*/
 html, body {
@@ -41,11 +48,11 @@ a {
   #front-page-canvas #front-page-canvas-text {
     position: relative;
     float: left;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     font-family: Verdana; }
 
 #about-me {

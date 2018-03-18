@@ -7,25 +7,28 @@
     <link href="styles/animate.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="shortcut icon" href="rsrc/favcon.ico" type="image/x-icon">
     <!--javascript files-->
     <script src="js/progressbar.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfH8pwR3Y1QeRzgPixttvfSHRrA2Y3tC8&callback=myMap"></script>
   </head>
   <main>
     <!--navbar-->
     <nav id="navbar">
       <div id="navbar-title"><a href="#">Pravat Bhusal</a></div>
-      <div id="navbar-tab"><a href="#front-page-canvas">Home</a></div>
+      <div id="navbar-tab"><a href="#">Home</a></div>
       <div id="navbar-tab"><a href="#about-me">About</a></div>
       <div id="navbar-tab"><a href="#services">Services</a></div>
       <div id="navbar-tab"><a href="#skills">Skills</a></div>
       <div id="navbar-tab"><a href="#projects">Projects</a></div>
       <div id="navbar-tab"><a href="#contact">Contact</a></div>
     </nav>
+    <div id="navbar-background"></div>
     <!--front page canvas-->
     <div id="front-page-canvas">
-      <div id="front-page-canvas-text"><h1>Professional software development, a click away.</h1></div>
+      <h1 id="front-page-canvas-text">Professional software development, a click away.</h1>
     </div>
     <!--about me section-->
     <div id="about-me">
@@ -163,6 +166,27 @@
   <footer>
   </footer>
   <script>
+    //canvas text carousel
+    var canvasText = document.getElementById("front-page-canvas-text");
+    var i = 0;
+    function updateCanvasText() {
+      if(i == 0) {
+        canvasText.innerHTML = "Providing a variety of skill-sets.";
+        i++;
+      } else if(i == 1) {
+        canvasText.innerHTML = "Here to make your business ventures easier.";
+        i++;
+      } else if(i == 2) {
+        canvasText.innerHTML = "Secure a well-established developer, today!";
+        i++;
+      } else if(i == 3) {
+        canvasText.innerHTML = "Professional software development, a click away.";
+        i = 0;
+      }
+      setTimeout(updateCanvasText, 3000);
+    }
+    updateCanvasText();
+
     //progress bars
     var html5css3Bar = new RadialProgress(document.getElementById("skills-skill-html5css3"),
     {progress:0.90, colorFg:"#E4512A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
@@ -191,6 +215,13 @@
 
     //scroll reveal
     new WOW().init();
+
+    //smooth scroll on anchor links
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      easing: "easeInOutCubic",
+      offset: 75,
+      speed: 500
+    });
   </script>
 </body>
 </html>
