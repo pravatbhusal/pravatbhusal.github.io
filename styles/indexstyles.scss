@@ -82,24 +82,30 @@ a {
   @include mobile {
     height: 60%;
   }
-  #front-page-canvas-text {
+  #front-page-canvas-container {
     position: relative;
     float: left;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 32px;
-    font-family: Verdana;
     @include tablet {
-      font-size: 28px;
       left: 55%;
-      width: 500px;
     }
     @include mobile {
-      font-size: 24px;
       left: 55%;
-      width: 200px;
+    }
+    #front-page-canvas-text {
+      color: white;
+      font-size: 32px;
+      font-family: Verdana;
+      @include tablet {
+        font-size: 28px;
+        width: 500px;
+      }
+      @include mobile {
+        font-size: 24px;
+        width: 200px;
+      }
     }
   }
 }

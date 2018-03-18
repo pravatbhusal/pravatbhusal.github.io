@@ -57,25 +57,30 @@ a {
   @media (max-width: 767px) {
     #front-page-canvas {
       height: 60%; } }
-  #front-page-canvas #front-page-canvas-text {
+  #front-page-canvas #front-page-canvas-container {
     position: relative;
     float: left;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 32px;
-    font-family: Verdana; }
+    transform: translate(-50%, -50%); }
     @media (min-width: 768px) and (max-width: 1023px) {
-      #front-page-canvas #front-page-canvas-text {
-        font-size: 28px;
-        left: 55%;
-        width: 500px; } }
+      #front-page-canvas #front-page-canvas-container {
+        left: 55%; } }
     @media (max-width: 767px) {
-      #front-page-canvas #front-page-canvas-text {
-        font-size: 24px;
-        left: 55%;
-        width: 200px; } }
+      #front-page-canvas #front-page-canvas-container {
+        left: 55%; } }
+    #front-page-canvas #front-page-canvas-container #front-page-canvas-text {
+      color: white;
+      font-size: 32px;
+      font-family: Verdana; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #front-page-canvas #front-page-canvas-container #front-page-canvas-text {
+          font-size: 28px;
+          width: 500px; } }
+      @media (max-width: 767px) {
+        #front-page-canvas #front-page-canvas-container #front-page-canvas-text {
+          font-size: 24px;
+          width: 200px; } }
 
 #about-me {
   display: grid;

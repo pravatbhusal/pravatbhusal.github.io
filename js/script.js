@@ -3,16 +3,16 @@ var canvasText = document.getElementById("front-page-canvas-text");
 var i = 0;
 function updateCanvasText() {
   if(i == 0) {
-    canvasText.innerHTML = "Providing a variety of skill-sets.";
+    canvasText.innerHTML = "Professional software development, a click away.";
     i++;
   } else if(i == 1) {
     canvasText.innerHTML = "Here to make your business ventures easier.";
     i++;
   } else if(i == 2) {
-    canvasText.innerHTML = "Secure a well-established developer, today!";
+    canvasText.innerHTML = "Providing a variety of skill-sets.";
     i++;
   } else if(i == 3) {
-    canvasText.innerHTML = "Professional software development, a click away.";
+    canvasText.innerHTML = "Making sure your needs are secured.";
     i = 0;
   }
   setTimeout(updateCanvasText, 2500);
