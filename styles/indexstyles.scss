@@ -1,7 +1,7 @@
 /*navbar*/
 #navbar {
   display: grid;
-  grid-template-columns: 1.5fr repeat(7, 1fr);
+  grid-template-columns: 1.5fr repeat(6, 1fr);
   width: auto;
   height: 100px;
   background-color: #252523;
@@ -189,23 +189,19 @@ a {
     }
   }
 }
-#contact {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
+#google-maps {
   width: auto;
   height: 500px;
+}
+#contact {
+  display: grid;
+  grid-template-columns: repeat(6, 0.5fr);
+  width: auto;
+  height: 75px;
   background-color: #3F3640;
   align-items: center;
-  padding-left: 20%;
+  justify-items: center;
   padding-right: 20%;
-  #contact-title {
-    justify-self: center;
-    text-align: center;
-    font-family: "Lemon Sans";
-    font-size: 56px;
-    margin-bottom: 35px;
-    margin-top: 50px;
-    color: #EDEDED;
-  }
+  padding-left: 20%;
 }
 /*footer*/

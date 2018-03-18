@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <!--javascript files-->
     <script src="js/progressbar.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfH8pwR3Y1QeRzgPixttvfSHRrA2Y3tC8&callback=myMap"></script>
   </head>
   <main>
     <!--navbar-->
@@ -19,7 +20,6 @@
       <div id="navbar-tab"><a href="#skills">Skills</a></div>
       <div id="navbar-tab"><a href="#projects">Projects</a></div>
       <div id="navbar-tab"><a href="#contact">Contact</a></div>
-      <div id="navbar-tab"><a href="blog.php">Blog</a></div>
     </nav>
     <!--front page canvas-->
     <div id="front-page-canvas">
@@ -148,33 +148,22 @@
         </div>
       </a>
     </div>
+    <!--google maps-->
+    <div id="google-maps"></div>
     <!--contact-->
     <div id="contact">
-      <div id="contact-title">Get in Touch</div>
-      <div id="contact-email">
-        <p>Your E-mail*</p>
-        <input type="email">
-      </div>
-      <div id="contact-name">
-        <p>Your Name*</p>
-        <input type="text">
-      </div>
-      <div id="contact-subject">
-        <p>Subject*</p>
-        <input type="text">
-      </div>
-      <div id="contact-message">
-        <p>Message*</p>
-        <input type="text">
-      </div>
-      <div id="contact-submit">
-        <button>Submit</button>
-      </div>
+      <a href="mailto:pravat.bhusal@gmail.com" target="_top"><img width="50px" height="50px" src="rsrc/email.png"></a>
+      <a href="https://www.linkedin.com/in/pravat-bhusal/" target="_blank"><img width="50px" height="50px" src="rsrc/linkedin.png"></a>
+      <a href="https://github.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/github.png"></a>
+      <a href="https://angel.co/pravat-bhusal" target="_blank"><img width="50px" height="50px" src="rsrc/angelist.png"></a>
+      <a href="https://devpost.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/devpost.png"></a>
+      <a href="https://twitter.com/Shadowsych" target="_blank"><img width="50px" height="50px" src="rsrc/twitter.png"></a>
     </div>
   </main>
   <footer>
   </footer>
   <script>
+    //progress bars
     var html5css3Bar = new RadialProgress(document.getElementById("skills-skill-html5css3"),
     {progress:0.90, colorFg:"#E4512A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
     var javascriptBar = new RadialProgress(document.getElementById("skills-skill-javascript"),
@@ -187,6 +176,18 @@
     {progress:0.60, colorFg:"#777BB3", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
     var pythonBar = new RadialProgress(document.getElementById("skills-skill-python"),
     {progress:0.10, colorFg:"#F8B721", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+
+    //google maps
+    var myLatLng = {lat: 32.926077, lng: -96.9487462};
+    var map = new google.maps.Map(document.getElementById('google-maps'), {
+      zoom: 10,
+      center: myLatLng
+    });
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: "Residence"
+    });
   </script>
 </body>
 </html>
