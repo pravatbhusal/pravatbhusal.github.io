@@ -1,25 +1,25 @@
 <html>
-
 <body>
-
   <head>
     <title>Pravat Bhusal</title>
     <!--style sheets-->
 		<link href="styles/indexstyles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <!--javascript files-->
+    <script src="js/progressbar.js"></script>
   </head>
   <main>
     <!--navbar-->
     <nav id="navbar">
       <div id="navbar-title"><a href="#">Pravat Bhusal</a></div>
-      <div id="navbar-tab">Home</div>
-      <div id="navbar-tab">About</div>
-      <div id="navbar-tab">Services</div>
-      <div id="navbar-tab">Skills</div>
-      <div id="navbar-tab">Projects</div>
-      <div id="navbar-tab">Contact</div>
-      <div id="navbar-tab">Blog</div>
+      <div id="navbar-tab"><a href="#front-page-canvas">Home</a></div>
+      <div id="navbar-tab"><a href="#about-me">About</a></div>
+      <div id="navbar-tab"><a href="#services">Services</a></div>
+      <div id="navbar-tab"><a href="#skills">Skills</a></div>
+      <div id="navbar-tab"><a href="#projects">Projects</a></div>
+      <div id="navbar-tab"><a href="#contact">Contact</a></div>
+      <div id="navbar-tab"><a href="blog.php">Blog</a></div>
     </nav>
     <!--front page canvas-->
     <div id="front-page-canvas">
@@ -46,14 +46,147 @@
       <img id="about-me-content-image" src="rsrc/irl_me.jpg">
       </div>
       <div id="about-me-footer">
-        <button type="button" id="about-me-footer-download-resume">View Resume</button>
+        <button type="button" id="about-me-footer-download-resume">Download Resume</button>
       </div>
     </div>
+    <!--services section-->
     <div id="services">
+      <div></div><div id="services-title">Services</div><div></div>
+      <div id="services-service-type">
+        <img src="rsrc/coding.png">
+        <p id="services-service-type-title">Web Design & Build</p>
+        <p id="services-service-type-text">With several years of experience in the industry I can bring your thoughts to life.
+           I am dedicated and passionate about your designs. Using the latest technology and hardware,
+          I can provide an affordable service, with stunning results.</p>
+      </div>
+      <div id="services-service-type">
+        <img src="rsrc/smartphone.png">
+        <p id="services-service-type-title">Mobile Development</p>
+        <p id="services-service-type-text">Over 70% of all websites are visited from a mobile device as of 2018.
+           I am able to bring your website into the future with a mobile optimisation package,
+           maintaning your design whilst making it accessable for devices.</p>
+      </div>
+      <div id="services-service-type">
+        <img src="rsrc/blog.png">
+        <p id="services-service-type-title">Database Management</p>
+        <p id="services-service-type-text">When information is needed, the first place that is visited is the internet.
+           I can create a blog with a custom web portal so you can keep your clients up
+           to date on your latest ventures.</p>
+      </div>
+      <div id="services-service-type">
+        <img src="rsrc/new.png">
+        <p id="services-service-type-title">Partial Re-Design</p>
+        <p id="services-service-type-text">Happy with your website? only want to change some fonts or colours? I can make those changes for you.
+           Maintaining your websites build, style and functionality. Making requested adjustments for cost effective pricing.</p>
+      </div>
+      <div id="services-service-type">
+        <img src="rsrc/analytics.png">
+        <p id="services-service-type-title">SEO Optimisation</p>
+        <p id="services-service-type-text">We are in a digital age. When you want a service, the first thing done is to search the internet.
+           I can provide marketing techniques to your existing website, to make you more findable in a search.
+           Making sure you get the business you deserve.</p>
+      </div>
+      <div id="services-service-type">
+        <img src="rsrc/geometry.png">
+        <p id="services-service-type-title">Software Engineering</p>
+        <p id="services-service-type-text">With several years in the industry,
+           I have an extensive contact list of graphic designers and artists.
+           Put a request in and we can provide you the artistic designs you need for competative pricing.</p>
+      </div>
+    </div>
+    <!--skills section-->
+    <div id="skills">
+      <div></div><div id="skills-title">Skills</div><div></div>
+      <div>
+        <p id="skills-skill-text">HTML5/CSS3</p>
+        <div id="skills-skill-html5css3"></div>
+      </div>
+      <div>
+        <p id="skills-skill-text">Javascript</p>
+        <div id="skills-skill-javascript"></div>
+      </div>
+      <div>
+        <p id="skills-skill-text">MySQL</p>
+        <div id="skills-skill-mysql"></div>
+      </div>
+      <div>
+        <p id="skills-skill-text">Java</p>
+        <div id="skills-skill-java"></div>
+      </div>
+      <div>
+        <p id="skills-skill-text">PHP</p>
+        <div id="skills-skill-php"></div>
+      </div>
+      <div>
+        <p id="skills-skill-text">Python</p>
+        <div id="skills-skill-python"></div>
+      </div>
+    </div>
+    <!--projects-->
+    <div id="projects">
+      <div></div><div id="projects-title">Recent Projects</div><div></div>
+      <a href="https://github.com/Shadowsych/greenview" target="_blank">
+        <div id="projects-project">
+          <img width="150px" height="150px" src="rsrc/project1.png">
+          <p id="projects-project-title">GreenView</p>
+          <p id="projects-project-text">An Android mobile application that determines whether an item is recyclable through a vision API.</p>
+        </div>
+      </a>
+      <a href="https://github.com/Shadowsych/steamhackathon.org" target="_blank">
+        <div id="projects-project">
+          <img width="150px" height="150px" src="rsrc/project2.jpg">
+          <p id="projects-project-title">STEAM Hackathon</p>
+          <p id="projects-project-text">A website I programmed as an intern for the S.T.E.A.M. Achievers Organization.
+          The website allows for users to host their flash or scratch games via the server.</p>
+        </div>
+      </a>
+      <a href="https://github.com/Shadowsych/sarassafashion.com" target="_blank">
+        <div id="projects-project">
+          <img width="250px" height="150px" src="rsrc/project3.png">
+          <p id="projects-project-title">SarassA Fashion</p>
+          <p id="projects-project-text">An e-commerce website programmed for the SarassA Fashion business.</p>
+        </div>
+      </a>
+    </div>
+    <!--contact-->
+    <div id="contact">
+      <div id="contact-title">Get in Touch</div>
+      <div id="contact-email">
+        <p>Your E-mail*</p>
+        <input type="email">
+      </div>
+      <div id="contact-name">
+        <p>Your Name*</p>
+        <input type="text">
+      </div>
+      <div id="contact-subject">
+        <p>Subject*</p>
+        <input type="text">
+      </div>
+      <div id="contact-message">
+        <p>Message*</p>
+        <input type="text">
+      </div>
+      <div id="contact-submit">
+        <button>Submit</button>
+      </div>
     </div>
   </main>
   <footer>
   </footer>
+  <script>
+    var html5css3Bar = new RadialProgress(document.getElementById("skills-skill-html5css3"),
+    {progress:0.90, colorFg:"#E4512A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+    var javascriptBar = new RadialProgress(document.getElementById("skills-skill-javascript"),
+    {progress:0.50, colorFg:"#F0DB4F", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+    var mysqlBar = new RadialProgress(document.getElementById("skills-skill-mysql"),
+    {progress:0.80, colorFg:"#00618A", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+    var javaBar = new RadialProgress(document.getElementById("skills-skill-java"),
+    {progress:0.65, colorFg:"#F69314", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+    var phpBAR = new RadialProgress(document.getElementById("skills-skill-php"),
+    {progress:0.60, colorFg:"#777BB3", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+    var pythonBar = new RadialProgress(document.getElementById("skills-skill-python"),
+    {progress:0.10, colorFg:"#F8B721", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
+  </script>
 </body>
-
 </html>
