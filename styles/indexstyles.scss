@@ -201,12 +201,12 @@ a {
   height: 900px;
   background-color: #EDEDED;
   @include tablet {
-    height: 2050px;
+    height: 2150px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
   }
   @include mobile {
-    height: 2050px;
+    height: 2150px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
   }
@@ -219,12 +219,12 @@ a {
     margin-top: 50px;
     color: #3F3640;
     @include tablet {
-      margin-bottom: 0px;
-      margin-top: 0px;
+      margin-bottom: 50px;
+      margin-top: 50px;
     }
     @include mobile {
-      margin-bottom: 0px;
-      margin-top: 0px;
+      margin-bottom: 50px;
+      margin-top: 50px;
     }
   }
   #services-service-type {

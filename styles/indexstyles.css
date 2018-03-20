@@ -167,12 +167,12 @@ a {
   background-color: #EDEDED; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #services {
-      height: 2050px;
+      height: 2150px;
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
   @media (max-width: 767px) {
     #services {
-      height: 2050px;
+      height: 2150px;
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
   #services #services-title {
@@ -185,12 +185,12 @@ a {
     color: #3F3640; }
     @media (min-width: 768px) and (max-width: 1023px) {
       #services #services-title {
-        margin-bottom: 0px;
-        margin-top: 0px; } }
+        margin-bottom: 50px;
+        margin-top: 50px; } }
     @media (max-width: 767px) {
       #services #services-title {
-        margin-bottom: 0px;
-        margin-top: 0px; } }
+        margin-bottom: 50px;
+        margin-top: 50px; } }
   #services #services-service-type {
     text-align: center; }
     #services #services-service-type #services-service-type-title {
