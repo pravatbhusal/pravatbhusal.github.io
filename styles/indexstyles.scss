@@ -201,12 +201,12 @@ a {
   height: 900px;
   background-color: #EDEDED;
   @include tablet {
-    height: 2250px;
+    height: 2050px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
   }
   @include mobile {
-    height: 2250px;
+    height: 2050px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
   }

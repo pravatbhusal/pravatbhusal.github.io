@@ -167,12 +167,12 @@ a {
   background-color: #EDEDED; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #services {
-      height: 2250px;
+      height: 2050px;
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
   @media (max-width: 767px) {
     #services {
-      height: 2250px;
+      height: 2050px;
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr); } }
   #services #services-title {
