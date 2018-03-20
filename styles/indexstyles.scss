@@ -336,3 +336,34 @@ a {
     }
   }
 }
+#copyright {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #3F3640;
+  color: white;
+  p {
+    padding: 0;
+    margin: 0;
+    color: #EDEDED;
+  }
+}
+/*remove animations in mobile/tablet view*/
+.animated {
+  @include tablet {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+  @include mobile {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+}

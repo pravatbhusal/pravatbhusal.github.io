@@ -290,4 +290,33 @@ a {
         width: 45px;
         height: 45px; } }
 
+#copyright {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #3F3640;
+  color: white; }
+  #copyright p {
+    padding: 0;
+    margin: 0;
+    color: #EDEDED; }
+
+/*remove animations in mobile/tablet view*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .animated {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important; } }
+@media (max-width: 767px) {
+  .animated {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
 /*# sourceMappingURL=indexstyles.css.map */
