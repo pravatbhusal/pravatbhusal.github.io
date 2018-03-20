@@ -203,12 +203,12 @@ a {
   @include tablet {
     height: 2250px;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
+    grid-template-rows: 0.1fr 1fr 0.1fr repeat(6, 3fr);
   }
   @include mobile {
     height: 2250px;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr 2fr repeat(9, 3fr);
+    grid-template-rows: 0.1fr 1fr 0.1fr repeat(6, 3fr);
   }
   #services-title {
     text-align: center;
@@ -218,14 +218,6 @@ a {
     margin-bottom: 50px;
     margin-top: 50px;
     color: #3F3640;
-    @include tablet {
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-    @include mobile {
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
   }
   #services-service-type {
     text-align: center;
