@@ -17,7 +17,7 @@ $desktop-width: 1200px;
     @content;
   }
 }
-/*navbar*/
+/*navbars*/
 #navbar {
   display: grid;
   position: fixed;
@@ -33,13 +33,22 @@ $desktop-width: 1200px;
   @include mobile {
     position: relative;
     grid-template-columns: 1fr;
-    height: 150px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 0px;
+    overflow: hidden;
+  }
+  &.isActive {
+    height: 250px;
   }
   #navbar-title {
     font-family: "Lobster", serif;
     font-size: 30px;
     color: white;
     cursor: pointer;
+    @include mobile {
+      display: none;
+    }
   }
   #navbar-tab {
     font-family: Verdana;
@@ -51,12 +60,44 @@ $desktop-width: 1200px;
     }
   }
 }
+#mobile-navbar {
+  display: none;
+  @include mobile {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #252523;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+  #mobile-navbar-title {
+    @include mobile {
+      font-family: "Lobster", serif;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  #mobile-navbar-collapse {
+    @include mobile {
+      text-align: center;
+      font-size: 17px;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+/*filler navbar background for only tablet/desktop view*/
 #navbar-background {
   width: auto;
   height: 100px;
   background-color: #252523;
   @include mobile {
-    height: 0px;
+    display: none;
   }
 }
 /*main body*/
@@ -333,9 +374,11 @@ a {
 #copyright {
   width: auto;
   height: auto;
+  font-family: "Lemon Sans";
   text-align: center;
   background-color: #3F3640;
   color: white;
+  padding: 5px;
   p {
     padding: 0;
     margin: 0;

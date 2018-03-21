@@ -54,3 +54,8 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   offset: 75,
   speed: 500
 });
+
+//mobile navbar collapse
+document.getElementById("mobile-navbar-collapse").addEventListener("click", function() {
+  document.getElementById("navbar").classList.toggle("isActive");
+});

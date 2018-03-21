@@ -1,5 +1,5 @@
 /*media queries*/
-/*navbar*/
+/*navbars*/
 #navbar {
   display: grid;
   position: fixed;
@@ -16,12 +16,20 @@
     #navbar {
       position: relative;
       grid-template-columns: 1fr;
-      height: 150px; } }
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      height: 0px;
+      overflow: hidden; } }
+  #navbar.isActive {
+    height: 250px; }
   #navbar #navbar-title {
     font-family: "Lobster", serif;
     font-size: 30px;
     color: white;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      #navbar #navbar-title {
+        display: none; } }
   #navbar #navbar-tab {
     font-family: Verdana;
     font-size: 20px;
@@ -30,13 +38,41 @@
     #navbar #navbar-tab:hover {
       color: #eae3e3; }
 
+#mobile-navbar {
+  display: none; }
+  @media (max-width: 767px) {
+    #mobile-navbar {
+      display: grid;
+      grid-template-columns: 75% 25%;
+      align-items: center;
+      width: auto;
+      height: auto;
+      background-color: #252523;
+      padding-left: 7.5%;
+      padding-right: 7.5%; } }
+  @media (max-width: 767px) {
+    #mobile-navbar #mobile-navbar-title {
+      font-family: "Lobster", serif;
+      font-size: 24px;
+      color: white;
+      cursor: pointer; } }
+  @media (max-width: 767px) {
+    #mobile-navbar #mobile-navbar-collapse {
+      text-align: center;
+      font-size: 17px;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer; } }
+
+/*filler navbar background for only tablet/desktop view*/
 #navbar-background {
   width: auto;
   height: 100px;
   background-color: #252523; }
   @media (max-width: 767px) {
     #navbar-background {
-      height: 0px; } }
+      display: none; } }
 
 /*main body*/
 html, body {
@@ -286,9 +322,11 @@ a {
 #copyright {
   width: auto;
   height: auto;
+  font-family: "Lemon Sans";
   text-align: center;
   background-color: #3F3640;
-  color: white; }
+  color: white;
+  padding: 5px; }
   #copyright p {
     padding: 0;
     margin: 0;
