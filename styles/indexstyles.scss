@@ -194,33 +194,33 @@ a {
 }
 #services {
   display: grid;
-  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-rows: 0.33fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   width: auto;
-  height: 900px;
+  height: auto;
   background-color: #EDEDED;
   @include tablet {
-    height: 2250px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.1fr repeat(6, 3fr);
+    grid-template-rows: 0.1fr 0.13fr 0.1fr repeat(6, 1fr);
   }
   @include mobile {
-    height: 2250px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.1fr repeat(6, 3fr);
+    grid-template-rows: 0.1fr 0.13fr 0.1fr repeat(6, 1fr);
   }
   #services-title {
     text-align: center;
-    align-self: center;
+    justify-self: stretch;
     font-family: "Lemon Sans";
     font-size: 56px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     margin-top: 50px;
     color: #3F3640;
   }
   #services-service-type {
     text-align: center;
+    align-self: center;
+    justify-self: center;
     #services-service-type-title {
       font-size: 24px;
       font-family: "Lemon Sans";
