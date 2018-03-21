@@ -161,7 +161,6 @@ a {
   display: grid;
   grid-template-rows: 0.33fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
   width: auto;
   height: auto;
   background-color: #EDEDED; }
@@ -175,7 +174,6 @@ a {
       grid-template-rows: 0.1fr 0.13fr 0.1fr repeat(6, 1fr); } }
   #services #services-title {
     text-align: center;
-    justify-self: stretch;
     font-family: "Lemon Sans";
     font-size: 56px;
     margin-bottom: 35px;
@@ -198,17 +196,16 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.1fr 0.35fr 0.35fr;
   width: auto;
-  height: 650px;
+  height: auto;
   background-color: #3F3640;
   justify-items: center; }
   @media (max-width: 767px) {
     #skills {
-      height: 1750px;
+      height: auto;
       grid-template-rows: 0.05fr 0.05fr 0.05fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr;
       grid-template-columns: 1fr; } }
   #skills #skills-title {
     text-align: center;
-    align-self: center;
     font-family: "Lemon Sans";
     font-size: 56px;
     margin-bottom: 35px;
@@ -219,6 +216,8 @@ a {
     font-size: 24px;
     font-family: "Lemon Sans";
     text-align: center; }
+  #skills #skills-skill-python {
+    margin-bottom: 15px; }
 
 #projects {
   display: grid;
@@ -264,7 +263,7 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 0.5fr);
   width: auto;
-  height: 75px;
+  height: auto;
   background-color: #3F3640;
   align-items: center;
   justify-items: center;
@@ -276,7 +275,9 @@ a {
       padding-left: 0%; } }
   #contact #contact-icon {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     @media (max-width: 767px) {
       #contact #contact-icon {
         width: 45px;
