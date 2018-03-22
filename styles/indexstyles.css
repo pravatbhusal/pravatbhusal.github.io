@@ -16,6 +16,7 @@
     #navbar {
       position: relative;
       grid-template-columns: 1fr;
+      margin-bottom: -1px;
       -webkit-transition: 0.3s;
       transition: 0.3s;
       height: 0px;
@@ -47,9 +48,10 @@
       align-items: center;
       width: auto;
       height: auto;
-      background-color: #252523;
+      margin-bottom: -1px;
       padding-left: 7.5%;
-      padding-right: 7.5%; } }
+      padding-right: 7.5%;
+      background-color: #252523; } }
   @media (max-width: 767px) {
     #mobile-navbar #mobile-navbar-title {
       font-family: "Lobster", serif;
@@ -69,6 +71,7 @@
 #navbar-background {
   width: auto;
   height: 100px;
+  margin-bottom: -1px;
   background-color: #252523; }
   @media (max-width: 767px) {
     #navbar-background {
@@ -89,7 +92,8 @@ a {
   background-image: url("../rsrc/canvas_background.jpg");
   background-size: 100% 100%;
   width: auto;
-  height: 90%; }
+  height: 90%;
+  margin-bottom: -1px; }
   @media (max-width: 767px) {
     #front-page-canvas {
       height: 60%; } }
@@ -123,9 +127,10 @@ a {
   grid-template-rows: 1fr 2fr 1fr;
   width: auto;
   height: auto;
-  background: #3F3640;
+  margin-bottom: -1px;
   padding-left: 15%;
-  padding-right: 15%; }
+  padding-right: 15%;
+  background: #3F3640; }
   @media (min-width: 1024px) and (max-width: 1199px) {
     #about-me {
       grid-template-rows: 0.5fr 2fr 0.5fr; } }
@@ -199,6 +204,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   width: auto;
   height: auto;
+  margin-bottom: -1px;
   background-color: #EDEDED; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #services {
@@ -231,10 +237,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.1fr 0.35fr 0.35fr;
+  justify-items: center;
   width: auto;
   height: auto;
-  background-color: #3F3640;
-  justify-items: center; }
+  margin-bottom: -1px;
+  background-color: #3F3640; }
   @media (max-width: 767px) {
     #skills {
       height: auto;
@@ -259,11 +266,12 @@ a {
   display: grid;
   grid-template-rows: 0.1fr 0.35fr;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
   width: auto;
   height: auto;
-  background-color: #723F3C;
-  align-items: center;
-  justify-items: center; }
+  margin-bottom: -1px;
+  background-color: #723F3C; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #projects {
       grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
@@ -293,16 +301,18 @@ a {
 /*footer*/
 #google-maps {
   width: auto;
-  height: 500px; }
+  height: 500px;
+  margin-bottom: -1px; }
 
 #contact {
   display: grid;
   grid-template-columns: repeat(6, 0.5fr);
-  width: auto;
-  height: auto;
-  background-color: #3F3640;
   align-items: center;
   justify-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: -1px;
+  background-color: #3F3640;
   padding-right: 20%;
   padding-left: 20%; }
   @media (max-width: 767px) {
@@ -322,11 +332,12 @@ a {
 #copyright {
   width: auto;
   height: auto;
+  margin-bottom: -1px;
+  padding: 5px;
   font-family: "Lemon Sans";
   text-align: center;
   background-color: #3F3640;
-  color: white;
-  padding: 5px; }
+  color: white; }
   #copyright p {
     padding: 0;
     margin: 0;

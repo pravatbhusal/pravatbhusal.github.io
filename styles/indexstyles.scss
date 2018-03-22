@@ -33,6 +33,7 @@ $desktop-width: 1200px;
   @include mobile {
     position: relative;
     grid-template-columns: 1fr;
+    margin-bottom: -1px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     height: 0px;
@@ -68,9 +69,10 @@ $desktop-width: 1200px;
     align-items: center;
     width: auto;
     height: auto;
-    background-color: #252523;
+    margin-bottom: -1px;
     padding-left: 7.5%;
     padding-right: 7.5%;
+    background-color: #252523;
   }
   #mobile-navbar-title {
     @include mobile {
@@ -95,6 +97,7 @@ $desktop-width: 1200px;
 #navbar-background {
   width: auto;
   height: 100px;
+  margin-bottom: -1px;
   background-color: #252523;
   @include mobile {
     display: none;
@@ -120,6 +123,7 @@ a {
   background-size: 100% 100%;
   width: auto;
   height: 90%;
+  margin-bottom: -1px;
   @include mobile {
     height: 60%;
   }
@@ -155,9 +159,10 @@ a {
   grid-template-rows: 1fr 2fr 1fr;
   width: auto;
   height: auto;
-  background: #3F3640;
+  margin-bottom: -1px;
   padding-left: 15%;
   padding-right: 15%;
+  background: #3F3640;
   @include mini-desktop {
     grid-template-rows: 0.5fr 2fr 0.5fr;
   }
@@ -239,6 +244,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   width: auto;
   height: auto;
+  margin-bottom: -1px;
   background-color: #EDEDED;
   @include tablet {
     grid-template-columns: 1fr;
@@ -275,10 +281,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.1fr 0.35fr 0.35fr;
+  justify-items: center;
   width: auto;
   height: auto;
+  margin-bottom: -1px;
   background-color: #3F3640;
-  justify-items: center;
   @include mobile {
     height: auto;
     grid-template-rows: 0.05fr 0.05fr 0.05fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr;
@@ -306,11 +313,12 @@ a {
   display: grid;
   grid-template-rows: 0.1fr 0.35fr;
   grid-template-columns: repeat(3, 1fr);
-  width: auto;
-  height: auto;
-  background-color: #723F3C;
   align-items: center;
   justify-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: -1px;
+  background-color: #723F3C;
   @include tablet {
     grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
     grid-template-columns: 1fr;
@@ -345,15 +353,17 @@ a {
 #google-maps {
   width: auto;
   height: 500px;
+  margin-bottom: -1px;
 }
 #contact {
   display: grid;
   grid-template-columns: repeat(6, 0.5fr);
-  width: auto;
-  height: auto;
-  background-color: #3F3640;
   align-items: center;
   justify-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: -1px;
+  background-color: #3F3640;
   padding-right: 20%;
   padding-left: 20%;
   @include mobile {
@@ -374,11 +384,12 @@ a {
 #copyright {
   width: auto;
   height: auto;
+  margin-bottom: -1px;
+  padding: 5px;
   font-family: "Lemon Sans";
   text-align: center;
   background-color: #3F3640;
   color: white;
-  padding: 5px;
   p {
     padding: 0;
     margin: 0;
