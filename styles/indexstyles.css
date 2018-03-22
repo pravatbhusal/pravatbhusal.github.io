@@ -60,10 +60,12 @@
       cursor: pointer; } }
   @media (max-width: 767px) {
     #mobile-navbar #mobile-navbar-collapse {
+      width: 50px;
+      height: 50px; } }
+  @media (max-width: 767px) {
+    #mobile-navbar #mobile-navbar-collapse #mobile-navbar-collapse-text {
       text-align: center;
       font-size: 17px;
-      width: 50px;
-      height: 50px;
       color: white;
       cursor: pointer; } }
 

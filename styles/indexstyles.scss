@@ -84,12 +84,16 @@ $desktop-width: 1200px;
   }
   #mobile-navbar-collapse {
     @include mobile {
-      text-align: center;
-      font-size: 17px;
       width: 50px;
       height: 50px;
-      color: white;
-      cursor: pointer;
+    }
+    #mobile-navbar-collapse-text {
+      @include mobile {
+        text-align: center;
+        font-size: 17px;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }
