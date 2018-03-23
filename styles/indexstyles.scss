@@ -212,13 +212,13 @@ a {
       }
       @include tablet {
         float: none;
-        margin-left: 0px;
+        margin-left: -28.5px;
         width: 200px;
         height: 200px;
       }
       @include mobile {
         float: none;
-        margin-left: 0px;
+        margin-left: -20px;
         width: 150px;
         height: 150px;
       }
