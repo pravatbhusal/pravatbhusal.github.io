@@ -203,9 +203,6 @@ a {
     #about-me-content-image {
       float: left;
       margin-left: 50px;
-      border-radius: 50%;
-      border-style: ridge;
-      border-color: #EDEDED;
       width: 250px;
       height: 250px;
       @include mini-desktop {
