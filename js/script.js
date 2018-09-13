@@ -39,7 +39,7 @@ var phpBAR = new RadialProgress(document.getElementById("skills-skill-php"),
 {progress:0.40, colorFg:"#777BB3", colorBg:"grey", thick:2.5, fixedTextSize:0.3});
 
 //google maps
-var myLatLng = {lat: 32.926077, lng: -96.9487462};
+var myLatLng = {lat: 30.2849, lng: -97.7341};
 var map = new google.maps.Map(document.getElementById('google-maps'), {
   zoom: 10,
   center: myLatLng
