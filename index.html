@@ -18,6 +18,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="">
 	<meta name="author" content="">
+
+  <!-- github integration -->
+  <meta name="gc:base" content="http://lab.lepture.com/github-cards/">
+  <meta name="gc:theme" content="medium">
     <!--mobile navbar-->
     <nav id="mobile-navbar">
       <div id="mobile-navbar-title"><a href="#">Pravat Bhusal</a></div>
@@ -164,30 +168,13 @@
     <!--projects-->
     <div id="projects">
       <div></div><div id="projects-title">A Few Projects</div><div></div>
-      <a href="https://github.com/Shadowsych/greenview" target="_blank" class="wow zoomIn">
-        <div id="projects-project">
-          <img width="150px" height="150px" src="rsrc/project1.png">
-          <p id="projects-project-title">GreenView</p>
-          <p id="projects-project-text">An Android mobile application that determines whether an item is recyclable through a vision API.</p>
-        </div>
-      </a>
-      <a href="https://github.com/Shadowsych/steamhackathon.org" target="_blank" class="wow zoomIn">
-        <div id="projects-project">
-          <img width="150px" height="150px" src="rsrc/project2.png">
-          <p id="projects-project-title">STEAM Hackathon</p>
-          <p id="projects-project-text">A website I programmed as an intern for the S.T.E.A.M. Achievers Organization.
-          The website allows for users to host their flash or scratch games via the server.</p>
-        </div>
-      </a>
-      <a href="https://github.com/Shadowsych/spoodle" target="_blank" class="wow zoomIn">
-        <div id="projects-project">
-          <img width="150px" height="150px" src="rsrc/project3.png">
-          <p id="projects-project-title">Spoodle</p>
-          <p id="projects-project-text">An Android mobile application that solves the annual loss of $218 billion in food waste,
-		  42 million food insecurities, and 3.3 billion tons of carbon footprints.</p>
-        </div>
-      </a>
+      <div class="github-card" data-user="Shadowsych" data-repo="fastpass"></div>
+      <div class="github-card" data-user="Shadowsych" data-repo="smart-rates"></div>
+      <div class="github-card" data-user="Shadowsych" data-repo="eagleeye"></div>
     </div>
+    <!-- script to show the github cards -->
+    <!-- may need to edit the widget.js URL if the host ever changes -->
+    <script src="js/widget.js"></script>
   </main>
   <footer>
     <!--google maps-->

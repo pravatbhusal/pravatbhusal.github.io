@@ -319,13 +319,16 @@ a {
   width: auto;
   height: auto;
   margin-bottom: -1px;
+  padding-bottom: 15px;
   background-color: #723F3C;
   @include tablet {
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0fr 0fr 0fr 0.35fr 0.35fr 0.35fr;
+    grid-gap: 1em;
     grid-template-columns: 1fr;
   }
   @include mobile {
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0fr 0fr 0fr 0.35fr 0.35fr 0.35fr;
+    grid-gap: 1em;
     grid-template-columns: 1fr;
   }
   #projects-title {
@@ -335,19 +338,6 @@ a {
     margin-bottom: 35px;
     margin-top: 50px;
     color: #EDEDED;
-  }
-  #projects-project {
-    text-align: center;
-    #projects-project-title {
-      font-size: 24px;
-      color: #EDEDED;
-      font-family: "Lemon Sans";
-    }
-    #projects-project-text {
-      color: #EDEDED;
-      width: 300px;
-      font-family: "Times";
-    }
   }
 }
 /*footer*/
