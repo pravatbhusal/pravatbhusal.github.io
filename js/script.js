@@ -1,32 +1,34 @@
-//canvas text carousel
+// canvas text carousel
 var canvasText = document.getElementById("front-page-canvas-text");
-var i = 0;
+var textIndex = 0;
 
+// update the canvas text every 2.5 seconds
 function updateCanvasText() {
-  if (i == 0) {
+  if (textIndex == 0) {
     canvasText.innerHTML = "Professional software development, a click away.";
-    i++;
-  } else if (i == 1) {
+    textIndex++;
+  } else if (textIndex == 1) {
     canvasText.innerHTML = "Here to make your business ventures easier.";
-    i++;
-  } else if (i == 2) {
+    textIndex++;
+  } else if (textIndex == 2) {
     canvasText.innerHTML = "Providing a variety of skill-sets.";
-    i++;
-  } else if (i == 3) {
+    textIndex++;
+  } else if (textIndex == 3) {
     canvasText.innerHTML = "Making sure your needs are secured.";
-    i = 0;
+    textIndex = 0;
   }
-  setTimeout(updateCanvasText, 2500);
+  var TEXT_CHANGE_TIME = 2500;
+  setTimeout(updateCanvasText, TEXT_CHANGE_TIME);
 }
 updateCanvasText();
 
-//google maps
+// google maps API
 var myLatLng = {
   lat: 30.2849,
   lng: -97.7341
 };
 var map = new google.maps.Map(document.getElementById('google-maps'), {
-  zoom: 10,
+  zoom: 15,
   center: myLatLng
 });
 var marker = new google.maps.Marker({
@@ -35,17 +37,17 @@ var marker = new google.maps.Marker({
   title: "Residence"
 });
 
-//scroll reveal
+// animations scroll reveal
 new WOW().init();
 
-//smooth scroll on anchor links
+// smooth scroll on anchor links
 var scroll = new SmoothScroll('a[href*="#"]', {
   easing: "easeInOutCubic",
   offset: 75,
   speed: 500
 });
 
-//mobile navbar collapse
+// mobile navbar collapse
 document.getElementById("mobile-navbar-collapse").addEventListener("click", function() {
   document.getElementById("navbar").classList.toggle("isActive");
 });

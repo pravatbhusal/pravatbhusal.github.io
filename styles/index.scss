@@ -17,7 +17,7 @@ $desktop-width: 1200px;
     @content;
   }
 }
-/*navbars*/
+/* navbars */
 #navbar {
   display: grid;
   position: fixed;
@@ -105,7 +105,7 @@ $desktop-width: 1200px;
     }
   }
 }
-/*filler navbar background for only tablet/desktop view*/
+/* filler navbar background for only tablet/desktop view */
 #navbar-background {
   width: auto;
   height: 100px;
@@ -115,7 +115,7 @@ $desktop-width: 1200px;
     display: none;
   }
 }
-/*main body*/
+/* main body */
 %reset-style {
   margin: 0;
   padding: 0;
@@ -354,12 +354,12 @@ a {
   padding-bottom: 15px;
   background-color: #723F3C;
   @include tablet {
-    grid-template-rows: 0 0 0 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0.0fr 0.0fr 0.0fr 0.35fr 0.35fr 0.35fr;
     grid-gap: 1em;
     grid-template-columns: 1fr;
   }
   @include mobile {
-    grid-template-rows: 0 0 0 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0.0fr 0.0fr 0.0fr 0.35fr 0.35fr 0.35fr;
     grid-gap: 1em;
     grid-template-columns: 1fr;
   }
@@ -373,7 +373,7 @@ a {
     color: #EDEDED;
   }
 }
-/*footer*/
+/* footer */
 #google-maps {
   width: auto;
   height: 500px;
@@ -424,7 +424,7 @@ a {
     color: #EDEDED;
   }
 }
-/*remove animations in mobile/tablet view*/
+/* remove animations in mobile/tablet view */
 .animated {
   @include tablet {
     -webkit-transition-property: none !important;
