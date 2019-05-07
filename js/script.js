@@ -1,17 +1,18 @@
 //canvas text carousel
 var canvasText = document.getElementById("front-page-canvas-text");
 var i = 0;
+
 function updateCanvasText() {
-  if(i == 0) {
+  if (i == 0) {
     canvasText.innerHTML = "Professional software development, a click away.";
     i++;
-  } else if(i == 1) {
+  } else if (i == 1) {
     canvasText.innerHTML = "Here to make your business ventures easier.";
     i++;
-  } else if(i == 2) {
+  } else if (i == 2) {
     canvasText.innerHTML = "Providing a variety of skill-sets.";
     i++;
-  } else if(i == 3) {
+  } else if (i == 3) {
     canvasText.innerHTML = "Making sure your needs are secured.";
     i = 0;
   }
@@ -20,7 +21,10 @@ function updateCanvasText() {
 updateCanvasText();
 
 //google maps
-var myLatLng = {lat: 30.2849, lng: -97.7341};
+var myLatLng = {
+  lat: 30.2849,
+  lng: -97.7341
+};
 var map = new google.maps.Map(document.getElementById('google-maps'), {
   zoom: 10,
   center: myLatLng

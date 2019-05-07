@@ -36,12 +36,14 @@ $desktop-width: 1200px;
     margin-bottom: -1px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    height: 0px;
+    height: 0;
     overflow: hidden;
   }
+
   &.isActive {
     height: 250px;
   }
+
   #navbar-title {
     font-family: "Lobster", serif;
     font-size: 30px;
@@ -51,16 +53,19 @@ $desktop-width: 1200px;
       display: none;
     }
   }
+
   #navbar-tab {
     font-family: Verdana;
     font-size: 20px;
     color: #D6D4D4;
     cursor: pointer;
+
     &:hover {
       color: #eae3e3;
     }
   }
 }
+
 #mobile-navbar {
   display: none;
   @include mobile {
@@ -74,6 +79,7 @@ $desktop-width: 1200px;
     padding-right: 7.5%;
     background-color: #252523;
   }
+
   #mobile-navbar-title {
     @include mobile {
       font-family: "Lobster", serif;
@@ -82,11 +88,13 @@ $desktop-width: 1200px;
       cursor: pointer;
     }
   }
+
   #mobile-navbar-collapse {
     @include mobile {
       width: 50px;
       height: 50px;
     }
+
     #mobile-navbar-collapse-text {
       @include mobile {
         text-align: center;
@@ -112,16 +120,21 @@ $desktop-width: 1200px;
   margin: 0;
   padding: 0;
 }
-html, body {
+
+body,
+html {
   @extend %reset-style;
 }
+
 a {
   color: inherit;
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
 }
+
 #front-page-canvas {
   background-image: url("../rsrc/canvas_background.jpg");
   background-size: 100% 100%;
@@ -131,6 +144,7 @@ a {
   @include mobile {
     height: 60%;
   }
+
   #front-page-canvas-container {
     position: relative;
     float: left;
@@ -143,6 +157,7 @@ a {
     @include mobile {
       left: 55%;
     }
+
     #front-page-canvas-text {
       color: white;
       font-size: 32px;
@@ -158,6 +173,7 @@ a {
     }
   }
 }
+
 #about-me {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
@@ -176,6 +192,7 @@ a {
   @include mobile {
     grid-template-rows: 0.5fr 2fr 0.25fr;
   }
+
   #about-me-welcome {
     color: white;
     font-size: 48px;
@@ -184,6 +201,7 @@ a {
     margin-bottom: 50px;
     margin-top: 50px;
   }
+
   #about-me-content {
     #about-me-content-text {
       float: left;
@@ -200,13 +218,14 @@ a {
         width: auto;
       }
     }
+
     #about-me-content-image {
       float: left;
       margin-left: 50px;
       width: 250px;
       height: 250px;
       @include mini-desktop {
-        margin-left: 0px;
+        margin-left: 0;
         width: 200px;
         height: 200px;
       }
@@ -224,8 +243,10 @@ a {
       }
     }
   }
+
   #about-me-footer {
     align-self: center;
+
     #about-me-footer-download-resume {
       background-color: #EDEDED;
       border-radius: 5px;
@@ -233,12 +254,14 @@ a {
       border: none;
       height: 35px;
       cursor: pointer;
+
       &:hover {
         background-color: #ddd7d7;
       }
     }
   }
 }
+
 #services {
   display: grid;
   grid-template-rows: 0.33fr 1fr 1fr;
@@ -255,6 +278,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.13fr 0.1fr repeat(6, 1fr);
   }
+
   #services-title {
     text-align: center;
     font-family: "Lemon Sans";
@@ -263,14 +287,17 @@ a {
     margin-top: 50px;
     color: #3F3640;
   }
+
   #services-service-type {
     text-align: center;
     align-self: center;
     justify-self: center;
+
     #services-service-type-title {
       font-size: 24px;
       font-family: "Lemon Sans";
     }
+
     #services-service-type-text {
       color: #818181;
       width: 300px;
@@ -278,6 +305,7 @@ a {
     }
   }
 }
+
 #skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -292,6 +320,7 @@ a {
     grid-template-rows: 0.05fr 0.05fr 0.05fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr 0.35fr;
     grid-template-columns: 1fr;
   }
+
   #skills-title {
     text-align: center;
     font-family: "Lemon Sans";
@@ -300,16 +329,19 @@ a {
     margin-top: 50px;
     color: #EDEDED;
   }
+
   #skills-skill-text {
     color: #EDEDED;
     font-size: 24px;
     font-family: "Lemon Sans";
     text-align: center;
   }
+
   #skills-skill-python {
     margin-bottom: 15px;
   }
 }
+
 #projects {
   display: grid;
   grid-template-rows: 0.1fr 0.35fr;
@@ -322,15 +354,16 @@ a {
   padding-bottom: 15px;
   background-color: #723F3C;
   @include tablet {
-    grid-template-rows: 0fr 0fr 0fr 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0 0 0 0.35fr 0.35fr 0.35fr;
     grid-gap: 1em;
     grid-template-columns: 1fr;
   }
   @include mobile {
-    grid-template-rows: 0fr 0fr 0fr 0.35fr 0.35fr 0.35fr;
+    grid-template-rows: 0 0 0 0.35fr 0.35fr 0.35fr;
     grid-gap: 1em;
     grid-template-columns: 1fr;
   }
+
   #projects-title {
     text-align: center;
     font-family: "Lemon Sans";
@@ -346,6 +379,7 @@ a {
   height: 500px;
   margin-bottom: -1px;
 }
+
 #contact {
   display: grid;
   grid-template-columns: repeat(6, 0.5fr);
@@ -358,9 +392,10 @@ a {
   padding-right: 20%;
   padding-left: 20%;
   @include mobile {
-    padding-right: 0%;
-    padding-left: 0%;
+    padding-right: 0;
+    padding-left: 0;
   }
+
   #contact-icon {
     width: 50px;
     height: 50px;
@@ -372,6 +407,7 @@ a {
     }
   }
 }
+
 #copyright {
   width: auto;
   height: auto;
@@ -381,6 +417,7 @@ a {
   text-align: center;
   background-color: #3F3640;
   color: white;
+
   p {
     padding: 0;
     margin: 0;
