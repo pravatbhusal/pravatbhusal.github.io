@@ -141,8 +141,11 @@ a {
   width: auto;
   height: 90%;
   margin-bottom: -1px;
-  @include mobile {
+  @include tablet {
     height: 60%;
+  }
+  @include mobile {
+    height: 35%;
   }
 
   #front-page-canvas-container {
