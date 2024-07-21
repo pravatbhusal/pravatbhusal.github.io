@@ -1,7 +1,7 @@
 # About
 Hi! Welcome to my personal website. The website features my life as a software engineer, and this GitHub repository is the source
 code for my portfolio-site.
-- https://shadowsych.github.io/
+- https://pravatbhusal.github.io/
 
 # Technologies
 - HTML5
